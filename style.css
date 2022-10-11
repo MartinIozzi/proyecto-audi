@@ -1,0 +1,377 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer1{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 500px;
+}
+
+.logo{
+    border: 15px;
+    padding: 15px;
+    width: 100px;
+    height: 35px;
+}
+
+nav ul{
+    width: 95%;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.barra-de-navegacion{
+    max-width: 100%;
+    border: solid black;
+    background-color: rgba(34, 26, 71, 0.733);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    text-align: left;
+    list-style: none;
+    font-size: 30px;
+}
+
+.lista{
+    font-weight: bolder;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+}
+
+
+.background-img{
+    background-image: url(./img/a.jpg);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+}
+
+.parrafo1{
+    font-family: sans-serif;;
+    font-weight: bolder;
+    padding-left: 25px;
+    border: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.parrafo2{
+    font-family: sans-serif;;
+    font-weight: bolder;
+    padding-left: 25px;
+    border: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.iconos{
+    border: solid black;
+    box-sizing: border-box;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(34, 26, 71, 0.733);
+    display: flex;
+    gap: 50px;
+}
+
+/* lo que sigue forma parte de la seccion de formulario, pero algunas etiquetas de 
+arriba tambien forman parte de las demas secciones, solo que comparten la class*/
+
+.footer2{
+    margin-top: 150px;
+}
+
+.background-img2{
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/2022-Audi-S1-e-tron-quattro-Hoonitron-13.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.cuadro-de-informacion{
+    border: solid rgb(0, 0, 0);
+    box-shadow: -10px -15px 10px 5px rgba(0, 0, 0, 0.466);
+    border-radius: 2%;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(248, 247, 253, 0.705);
+}
+
+
+.cuadro-de-informacion1{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(34, 26, 71, 0.507);
+}
+
+.cuadro-de-informacion2{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(34, 26, 71, 0.507);
+}
+
+.cuadro-de-informacion3{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(34, 26, 71, 0.507);
+}
+
+.datos{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.letra{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+/*seccion de novedades*/
+.galeria1{
+    padding: 50px;
+    flex-direction: column;
+}
+
+.galeria2{
+    padding: 50px;
+    flex-direction: column;
+}
+
+.galeria3{
+    padding: 50px;
+    flex-direction: column;
+}
+
+.fotos-autos1{
+    border: solid black;
+    border-radius: 5% 5% 5% 5%;
+    width: 500px;
+}
+
+.fotos-autos2{
+    border: solid black;
+    border-radius: 5% 5% 5% 5%;
+    width: 500px;
+
+}
+
+.fotos-autos3{
+    border: solid black;
+    border-radius: 5% 5% 5% 5%;
+    width: 500px;
+}
+
+
+.lista-autos{
+    padding: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.background-img3{
+    background-image: url(./img/16503593529199.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.info-autos{
+    display: flex;
+    border: solid black;
+    border-radius: 5%;
+    width: 27%;
+    height: 25%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+
+.parrafo3{
+    color: white;
+    font-family: sans-serif;;
+    font-weight: bolder;
+    padding-left: 25px;
+    border: 10px;
+    font-size: 40px;
+}
+
+.parrafo4{
+    color: white;
+    font-family: sans-serif;;
+    font-weight: bolder;
+    padding-left: 25px;
+    border: 10px;
+    font-size: 20px;
+}
+
+/*galeria*/
+
+.background-img4{
+    background-image: url(./img/audi-rs-3-lms-2021-1612611443.jpg);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.grid-container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    
+}
+
+.cajas{
+    grid-area: header;
+}
+
+.box-1{
+    width: 100%;
+    grid-column: 1/ 4;
+    grid-row: 1/ 2;
+}
+
+.box-2 .modelo1{
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.box-3 .modelo2{
+    margin-top: 60px;
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.box-4 .modelo3{
+    margin-top: 60px;
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.box-5 .modelo4{
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.box-6 .modelo5{
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.box-7 .modelo6{
+    width: 500px;
+    height: 300px;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.info-modelos{
+    font-family: sans-serif;;
+    font-weight: bolder;
+    color: white;
+    font-size: 30px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.galeria{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+}
+
+.enlace-a-info-autos{
+    font-family: sans-serif;;
+    color: black;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+/*servicio al cliente*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pag-servicio{
+    margin-top: 100px;
+}
+
+.background-img5{
+    background-image: url(./img/AUDI-E-TRON-GT-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.servicios{
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.atencion{
+    text-align: center;
+    gap: 10px;
+    font-family: sans-serif;;
+    color: rgba(0, 255, 200, 0.589);
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.atencion-1{
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 50px;
+    gap: 10px;
+    font-family: sans-serif;;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+
+.atencion-2{
+    padding: 30px;
+    gap: 10px;
+    font-family: sans-serif;;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+aside{
+    margin-top: 0%;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 20px;
+    color: rgb(0, 255, 200);
+    font-weight: bolder;
+}
