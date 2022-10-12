@@ -10,6 +10,11 @@ body{
     margin-top: 550px;
 }
 
+.logo:hover{
+    transform: scale(1.2);
+    transition: transform 300ms;
+}
+
 .logo{
     border: 15px;
     padding: 15px;
