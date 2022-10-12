@@ -1,6 +1,5 @@
 
 body{
-    display: flex;
     flex-direction: column;
 }
 
@@ -8,7 +7,7 @@ body{
 .footer1{
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 500px;
+    margin-top: 550px;
 }
 
 .logo{
@@ -38,6 +37,12 @@ nav ul{
     list-style: none;
     font-size: 30px;
 }
+
+.lista:hover{
+    transform: scale(1.2);
+    transition: transform 300ms;
+}
+
 
 .lista{
     font-weight: bolder;
@@ -74,6 +79,11 @@ nav ul{
     border: 10px;
     color: rgb(0, 0, 0);
     font-size: 20px;
+}
+
+.iconos:hover{
+    transform: 1.1;
+    transition: transform 500ms;
 }
 
 .iconos{
@@ -142,19 +152,29 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
 }
 
 /*seccion de novedades*/
+.grid1{
+    margin-top: 10px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .galeria1{
     padding: 50px;
     flex-direction: column;
+    grid-column: 1;
 }
 
-.galeria2{
+.galeria2 {
     padding: 50px;
     flex-direction: column;
+    grid-column: 2;
 }
 
 .galeria3{
     padding: 50px;
     flex-direction: column;
+    grid-column: 3;
 }
 
 .fotos-autos1{
@@ -167,7 +187,6 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     border: solid black;
     border-radius: 5% 5% 5% 5%;
     width: 500px;
-
 }
 
 .fotos-autos3{
@@ -194,8 +213,7 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     display: flex;
     border: solid black;
     border-radius: 5%;
-    width: 27%;
-    height: 25%;
+    width: 90%;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.61);
 }
