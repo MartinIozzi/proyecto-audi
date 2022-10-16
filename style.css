@@ -1,8 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body{
     flex-direction: column;
 }
 
+header{
+    display: flex;
+    width: 100%;
+}
 
 .footer1{
     display: grid;
@@ -19,7 +28,7 @@ body{
     border: 15px;
     padding: 15px;
     width: 100px;
-    height: 35px;
+    
 }
 
 nav ul{
@@ -28,10 +37,13 @@ nav ul{
     margin: 0px;
 }
 
-
+.contenedor{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 .barra-de-navegacion{
-    max-width: 100%;
     border: solid black;
     background-color: rgba(34, 26, 71, 0.733);
     margin: 20px;
@@ -41,9 +53,11 @@ nav ul{
     text-align: left;
     list-style: none;
     font-size: 30px;
+    max-width: 100%;
 }
 
 .lista:hover{
+    color: white;
     transform: scale(1.2);
     transition: transform 300ms;
 }
@@ -64,7 +78,7 @@ nav ul{
 .background-img{
     background-image: url(./img/a.jpg);
     background-repeat: no-repeat;
-    background-attachment: local;
+    background-attachment: fixed;
     background-position: center;
 }
 
@@ -121,6 +135,74 @@ nav ul{
     gap: 50px;
 }
 
+
+@media (max-width: 576px){
+    .background-img{
+        background-image: url(./img/a.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .contenedor{
+        display: grid;
+    }
+
+    .barra-de-navegacion{
+        max-width: 100%;
+        border: solid;
+        background-color: rgba(34, 26, 71, 0.733);
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        text-align: left;
+        list-style: none;
+        font-size: 30px;
+    }
+
+    .lista{
+        font-size: 15px;
+        font-weight: bolder;
+        font-family: 'Noto Sans Mono', monospace;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+        text-align: left;
+        color: white;
+    }
+
+    .parrafo1{
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 10px;
+        border: 5px;
+        color: black;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .parrafo2{
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 10px;
+        border: 5px;
+        color: black;
+        font-size: 15px;
+    }
+
+    .iconos{
+        
+        border: solid black;
+        box-sizing: border-box;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgba(34, 26, 71, 0.733);
+        display: flex;
+        gap: 50px;
+    }
+}
+
 /* lo que sigue forma parte de la seccion de formulario, pero algunas etiquetas de 
 arriba tambien forman parte de las demas secciones, solo que comparten la class*/
 
@@ -146,10 +228,6 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     margin: 20px;
     padding: 20px;
     background-color: rgba(248, 247, 253, 0.705);
-}
-
-input::selection{
-    color: #93291E;
 }
 
 .cuadro-de-informacion1{
