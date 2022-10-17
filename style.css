@@ -135,8 +135,16 @@ nav ul{
     gap: 50px;
 }
 
+.contenedor-busqueda{
+    width: 50%;
+}
 
-@media (max-width: 576px){
+.busqueda{
+    width: 40%;
+    float: right;
+}
+
+@media (max-width:576px) {
     .background-img{
         background-image: url(./img/a.jpg);
         background-repeat: no-repeat;
@@ -200,6 +208,10 @@ nav ul{
         background-color: rgba(34, 26, 71, 0.733);
         display: flex;
         gap: 50px;
+    }
+
+    .contenedor-busqueda{
+        display: none;
     }
 }
 
@@ -436,7 +448,7 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     font-family: sans-serif;;
     font-weight: bolder;
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .enlace-a-info-autos{
