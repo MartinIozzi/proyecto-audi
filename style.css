@@ -29,7 +29,11 @@ header{
     border: 15px;
     padding: 15px;
     width: 100px;
-    
+}
+
+.contenedor-logo{
+    width: 100px;
+    height: 100px;
 }
 
 nav ul{
@@ -319,13 +323,13 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     background-color: rgba(34, 26, 71, 0.507);
 }
 
-.cuadro-de-informacion2{
+.cuadro-de-informacion1{
     margin: 20px;
     padding: 20px;
     background-color: rgba(34, 26, 71, 0.507);
 }
 
-.cuadro-de-informacion3{
+.cuadro-de-informacion1{
     margin: 20px;
     padding: 20px;
     background-color: rgba(34, 26, 71, 0.507);
@@ -340,6 +344,13 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+
+
+@media (max-width: 576px) {
+    .cuadro-de-informacion{
+
+    }
 }
 
 /*seccion de novedades*/
