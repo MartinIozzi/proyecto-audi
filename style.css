@@ -13,6 +13,7 @@ header{
     width: 100%;
 }
 
+
 .footer1{
     display: grid;
     grid-template-columns: 1fr;
@@ -139,51 +140,105 @@ nav ul{
     width: 50%;
 }
 
+.contenedor-mobile{
+    display: none;
+}
+
 .busqueda{
     width: 40%;
     float: right;
 }
 
-@media (max-width:576px) {
+@media (max-width:768px) {
     .background-img{
-        background-image: url(./img/a.jpg);
+        background-image: url(./img/fondo-tablet.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
     }
 
     .contenedor{
-        display: grid;
+        display: flex;
     }
 
+    
     .barra-de-navegacion{
-        max-width: 100%;
-        border: solid;
-        background-color: rgba(34, 26, 71, 0.733);
-        margin: 5px;
-        padding: 5px;
-        display: flex;
-        text-align: left;
-        list-style: none;
-        font-size: 30px;
-    }
-
-    .lista{
-        font-size: 15px;
-        font-weight: bolder;
-        font-family: 'Noto Sans Mono', monospace;
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        list-style: none;
-        text-decoration: none;
-        text-align: left;
-        color: white;
+        display: none;
     }
 
     .parrafo1{
         font-family: sans-serif;
         font-weight: bolder;
-        padding-left: 10px;
+        padding-left: 90px;
+        border: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .parrafo2{
+        margin-top: 30px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 90px;
+        border: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+
+    .contenedor-busqueda{
+        display: none;
+    }
+
+    .logo{
+        margin-left: 70px;
+        size: 50px;
+    }
+
+    .contenedor-mobile{
+        display: flex;
+        box-sizing: border-box;
+        width: 70px;
+        height: 100%;
+        padding-right: 0%;
+    }
+
+    .container-fluid{
+        position: absolute;
+        top: 40px; right: 5px;
+    }
+
+    .buscar-mobile{
+        width: 300px;
+    }
+
+    .footer1{
+        margin-top: 600px;
+        margin-left: 70px;
+    }
+}
+
+
+@media (max-width:576px) {
+    .background-img{
+        background-image: url(./img/fondo-celular.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    .contenedor{
+        display: flex;
+    }
+
+    .barra-de-navegacion{
+        display: none;
+    }
+
+    .parrafo1{
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 90px;
         border: 5px;
         color: black;
         font-size: 20px;
@@ -193,27 +248,43 @@ nav ul{
     .parrafo2{
         font-family: sans-serif;
         font-weight: bolder;
-        padding-left: 10px;
+        padding-left: 90px;
         border: 5px;
         color: black;
         font-size: 15px;
     }
 
-    .iconos{
-        
-        border: solid black;
-        box-sizing: border-box;
-        margin: 20px;
-        padding: 20px;
-        background-color: rgba(34, 26, 71, 0.733);
-        display: flex;
-        gap: 50px;
-    }
-
     .contenedor-busqueda{
         display: none;
     }
+
+    .logo{
+        margin-left: 70px;
+        size: 50px;
+    }
+
+    .contenedor-mobile{
+        display: flex;
+        box-sizing: border-box;
+        width: 70px;
+        height: 100%;
+        padding-right: 0%;
+    }
+
+    .container-fluid{
+        position: absolute;
+        top: 40px; right: 5px;
+    }
+
+    .buscar-mobile{
+        width: 300px;
+    }
+
+    .footer1{
+        margin-left: 70px;
+    }
 }
+
 
 /* lo que sigue forma parte de la seccion de formulario, pero algunas etiquetas de 
 arriba tambien forman parte de las demas secciones, solo que comparten la class*/
@@ -272,11 +343,13 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
 }
 
 /*seccion de novedades*/
-.grid1{
-    margin-top: 10px;
-    grid-area: main;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+@media (min-width:1200px) {
+    .estructura{
+        margin-top: 10px;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .galeria1{
@@ -297,24 +370,19 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     grid-column: 3;
 }
 
-.fotos-autos1{
+.fotos-autos{
     border: solid black;
     border-radius: 5% 5% 5% 5%;
     width: 500px;
 }
 
-.fotos-autos2{
-    border: solid black;
-    border-radius: 5% 5% 5% 5%;
-    width: 500px;
+.nombre-autos{
+    font-family: 'Kanit', sans-serif;
+    color: rgb(0, 23, 128); color: solid;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
 }
-
-.fotos-autos3{
-    border: solid black;
-    border-radius: 5% 5% 5% 5%;
-    width: 500px;
-}
-
 
 .lista-autos{
     font-family: 'Kanit', sans-serif;
@@ -347,7 +415,7 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     color: white;
     font-family: sans-serif;;
     font-weight: bolder;
-    padding-left: 25px;
+    padding-left: 90px;
     border: 10px;
     font-size: 40px;
 }
@@ -356,10 +424,66 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     color: white;
     font-family: sans-serif;;
     font-weight: bolder;
-    padding-left: 25px;
+    padding-left: 90px;
     border: 10px;
     font-size: 20px;
 }
+
+.fondo-texto{
+    display: none;
+}
+
+.audi-oficial{
+    text-decoration: none;
+    list-style: none;
+}
+
+@media (max-width:576px) {
+    .estructura{
+        margin-left: 90px;
+    }
+
+    .info-autos{
+        margin-bottom: 10px;
+    }
+
+    .fotos-autos{
+        border: solid black;
+        border-radius: 5% 5% 5% 5%;
+        max-width: 350px;
+    }
+
+    footer{
+        margin-left: 70px;
+    }
+
+    .btn-close{
+        position: absolute;
+        right: 60px;
+    }
+
+}
+
+@media (max-width:768px) {
+    .estructura{
+        margin-left: 100px;
+    }
+
+    .info-autos{
+        margin-bottom: 20px;
+    }
+
+    footer{
+        margin-left: 90px;
+    }
+
+    .btn-close{
+        position: absolute;
+        right: 60px; top: 25px;
+    }
+
+}
+
 
 /*galeria*/
 
@@ -486,7 +610,7 @@ arriba tambien forman parte de las demas secciones, solo que comparten la class*
     text-align: center;
     gap: 10px;
     font-family: sans-serif;;
-    color: rgba(0, 255, 200, 0.589);
+    color: rgb(255, 255, 255);
     font-weight: bolder;
     font-size: 30px;
 }
