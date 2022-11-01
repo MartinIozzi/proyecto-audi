@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  display: flex;
+  width: 100%; }
+  header .logo {
+    border: 15px;
+    padding: 15px;
+    width: 150px; }
+  header .logo:hover {
+    transform: scale(1.2);
+    transition: transform 300ms; }
+  header .contenedor-logo {
+    width: 100px;
+    height: 100px; }
+  header nav ul {
+    width: 95%;
+    padding: 0px;
+    margin: 0px; }
+  header .contenedor {
+    width: 100%;
+    margin: 0px;
+    padding: 0px; }
+  header .barra-de-navegacion {
+    border: solid black;
+    background-color: rgba(34, 26, 71, 0.733);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    text-align: left;
+    list-style: none;
+    font-size: 30px;
+    max-width: 100%; }
+  header .lista:hover {
+    transform: scale(1.2);
+    transition: transform 300ms; }
+  header .lista {
+    font-weight: bolder;
+    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    text-align: left;
+    color: white; }
+  header .contenedor-busqueda {
+    width: 50%; }
+  header .contenedor-mobile {
+    display: none; }
+  header .busqueda {
+    width: 40%;
+    float: right; }
+
+/* index */
+.background-img {
+  background-image: url(../../img/a.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+.parrafo1 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding-left: 25px;
+  border: 10px;
+  color: black;
+  font-size: 30px; }
+
+.parrafo2 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  padding-left: 25px;
+  border: 10px;
+  color: black;
+  font-size: 20px; }
+
+/* novedades */
+.background-img3 {
+  background-image: url(./img/16503593529199.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* galeria */
+.background-img4 {
+  background-image: url(./img/audi-rs-3-lms-2021-1612611443.jpg);
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* servicio */
+.background-img5 {
+  background-image: url(./img/AUDI-E-TRON-GT-4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/* formulario */
+.background-img2 {
+  width: 100%;
+  height: 100%;
+  background: #ED213A;
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+  background: linear-gradient(to right, #93291E, #ED213A);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
