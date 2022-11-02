@@ -1,0 +1,59 @@
+/*index-tablet*/
+@media (max-width:768px) {
+    .background-img{
+        background-image: url(./img/fondo-tablet.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .contenedor{
+        display: flex;
+    }
+    
+    .barra-de-navegacion{
+        display: none;
+    }
+    .parrafo1{
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 90px;
+        border: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .parrafo2{
+        margin-top: 30px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        padding-left: 90px;
+        border: 5px;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+    }
+    .contenedor-busqueda{
+        display: none;
+    }
+    .logo{
+        margin-left: 70px;
+        size: 50px;
+    }
+    .contenedor-mobile{
+        display: flex;
+        box-sizing: border-box;
+        width: 70px;
+        height: 100%;
+        padding-right: 0%;
+    }
+    .container-fluid{
+        position: absolute;
+        top: 40px; right: 5px;
+    }
+    .buscar-mobile{
+        width: 300px;
+    }
+    .footer1{
+        margin-top: 600px;
+        margin-left: 70px;
+    }
+}

@@ -94,16 +94,13 @@ header {
   grid-template-columns: repeat(3, 1fr); }
   .estructura .galeria1 {
     padding: 50px;
-    flex-direction: column;
-    grid-column: 1; }
+    flex-direction: column; }
   .estructura .galeria2 {
     padding: 50px;
-    flex-direction: column;
-    grid-column: 2; }
+    flex-direction: column; }
   .estructura .galeria3 {
     padding: 50px;
-    flex-direction: column;
-    grid-column: 3; }
+    flex-direction: column; }
   .estructura .fotos-autos {
     border: solid black;
     border-radius: 5%;
@@ -277,3 +274,88 @@ footer
 .custom-colors {
   color: white;
   font-weight: bolder; }
+
+/*novedades-mobile*/
+@media (max-width: 576px) {
+  .contenedor-mobile {
+    display: flex;
+    box-sizing: border-box;
+    width: 70px;
+    height: 100%;
+    padding-right: 0%; }
+  .estructura {
+    display: grid; }
+  .barra-de-navegacion {
+    display: none; }
+  .mobile {
+    grid-area: main;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 90px; }
+  .info-autos {
+    margin-bottom: 10px; }
+  .fotos-autos {
+    border: solid black;
+    border-radius: 5% 5% 5% 5%;
+    max-width: 350px; }
+  footer {
+    margin-left: 70px; }
+  .btn-close {
+    position: absolute;
+    right: 60px; }
+  .galeria1 {
+    flex-direction: row; }
+  .galeria2 {
+    flex-direction: row; }
+  .galeria3 {
+    flex-direction: row; }
+  .contenedor {
+    display: none; } }
+
+/*index-tablet*/
+@media (max-width: 768px) {
+  .background-img {
+    background-image: url(./img/fondo-tablet.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; }
+  .contenedor {
+    display: flex; }
+  .barra-de-navegacion {
+    display: none; }
+  .parrafo1 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 90px;
+    border: 5px;
+    color: black;
+    font-size: 20px;
+    margin-top: 10px; }
+  .parrafo2 {
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding-left: 90px;
+    border: 5px;
+    color: black;
+    font-size: 15px; }
+  .contenedor-busqueda {
+    display: none; }
+  .logo {
+    margin-left: 70px;
+    size: 50px; }
+  .contenedor-mobile {
+    display: flex;
+    box-sizing: border-box;
+    width: 70px;
+    height: 100%;
+    padding-right: 0%; }
+  .container-fluid {
+    position: absolute;
+    top: 40px;
+    right: 5px; }
+  .buscar-mobile {
+    width: 300px; }
+  .footer1 {
+    margin-top: 600px;
+    margin-left: 70px; } }

@@ -1,0 +1,49 @@
+/*novedades-mobile*/
+@media (max-width:576px) {
+    .contenedor-mobile {
+    display: flex;
+    box-sizing: border-box;
+    width: 70px;
+    height: 100%;
+    padding-right: 0%;
+    }
+    .estructura{
+        display: grid;
+    }
+    .barra-de-navegacion{
+        display: none;
+    }
+    .mobile{
+        grid-area: main;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        margin-left: 90px;
+    }
+    .info-autos{
+        margin-bottom: 10px;
+    }
+    .fotos-autos{
+        border: solid black;
+        border-radius: 5% 5% 5% 5%;
+        max-width: 350px;
+    }
+    footer{
+        margin-left: 70px;
+    }
+    .btn-close{
+        position: absolute;
+        right: 60px;
+    }
+    .galeria1{
+        flex-direction: row;
+    }
+    .galeria2{
+        flex-direction: row;
+    }
+    .galeria3{
+        flex-direction: row;
+    }
+    .contenedor{
+        display: none;
+    }
+}
