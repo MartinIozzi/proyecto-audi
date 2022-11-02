@@ -1,9 +1,7 @@
 /* index */
 .config{
     background-image: url(../../img/a.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    @include props-body;
     display: grid;
     grid-area: body;
     grid-template-rows: 1fr 620px 100px;

@@ -128,7 +128,9 @@ header {
     border: solid black;
     border-radius: 5%;
     width: 600px;
+    height: none;
     padding: 20px;
+    margin: none;
     background-color: rgba(255, 255, 255, 0.61); }
   .estructura .fondo-texto {
     display: none; }
@@ -154,34 +156,91 @@ header {
 
 /* galeria */
 .config1 {
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%); }
+  background: #3a6186;
+  background: -webkit-linear-gradient(to right, #89253e, #3a6186);
+  background: linear-gradient(to right, #89253e, #3a6186); }
 
 /* servicio */
 .config2 {
-  background-image: url(./img/AUDI-E-TRON-GT-4.png);
+  background: #c2e59c;
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+  background: linear-gradient(to right, #64b3f4, #c2e59c);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: grid;
+  grid-area: body;
+  grid-template-rows: 1fr 620px 100px; }
+  .config2 .servicios {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px; }
+  .config2 .atencion-cliente {
+    border: solid;
+    display: block;
+    margin: auto;
+    grid-area: body;
+    width: 100vh; }
+  .config2 .atencion {
+    text-align: center;
+    gap: 10px;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bolder;
+    font-size: 20px; }
+  .config2 .atencion-1 {
+    font-size: 20px;
+    padding-left: 30px;
+    margin-top: 50px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder; }
+  .config2 .atencion-2 {
+    padding-left: 30px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px; }
 
 /* formulario */
-.background-img2 {
-  width: 100%;
-  height: 100%;
-  background: #ED213A;
-  background: -webkit-linear-gradient(to right, #93291E, #ED213A);
-  background: linear-gradient(to right, #93291E, #ED213A);
+.config3 {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center; }
+  background-position: center;
+  background: #9CECFB;
+  background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+  background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);
+  display: grid;
+  grid-area: body;
+  grid-template-rows: 1fr 620px 100px; }
+
+.cuadro-de-informacion {
+  width: none;
+  height: none;
+  padding: 20px;
+  margin: 20px;
+  border: solid black;
+  box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
+  border-radius: 2%;
+  background-color: rgba(248, 247, 253, 0.705); }
+  .cuadro-de-informacion .datos {
+    font-size: x-large;
+    font-weight: bolder; }
+  .cuadro-de-informacion .letra {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; }
 
 /* footer */
 footer
 .iconos {
+  width: none;
+  height: none;
+  padding: 20px;
+  margin: 20px;
   border: solid black;
   box-sizing: border-box;
-  margin: 20px;
-  padding: 20px;
   background-color: rgba(34, 26, 71, 0.733);
   display: flex;
   gap: 50px; }
@@ -206,7 +265,9 @@ footer
     transform: scale(1.3);
     transition: transform 100ms; }
 
+/* bootstrap_galeria */
 .modelo {
+  border: #3d3d3d solid;
   width: 100vh;
   height: 65vh;
   top: 50%;

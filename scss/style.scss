@@ -1,4 +1,5 @@
 @import "./base/reset";
+@import "./utilities/mixins";
 @import "./layout/header";
 @import "./layout/body-index";
 @import "./layout/main-index";
@@ -7,6 +8,8 @@
 @import "./layout/body-galeria";
 @import "./layout/main-galeria";
 @import "./layout/body-servicio-al-cliente";
+@import "./layout/main-servicio-al-cliente";
 @import "./layout/body-formulario";
+@import "./layout/main-formulario";
 @import "./layout/footer";
 @import "./components/bootstrap.scss";

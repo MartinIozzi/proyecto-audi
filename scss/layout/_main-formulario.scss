@@ -1,0 +1,18 @@
+.cuadro-de-informacion{
+    @include medidas( none, none, 20px, 20px);
+    border: solid rgb(0, 0, 0);
+    box-shadow: -10px -15px 20px 5px rgba(0, 0, 0, 0.466);
+    border-radius: 2%;
+    background-color: rgba(248, 247, 253, 0.705);
+    
+    .datos{
+        font-size: x-large;
+        font-weight: bolder;
+    }
+    
+    .letra{
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+}

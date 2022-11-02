@@ -1,8 +1,53 @@
 /* servicio */
-.config2{
-    background-image: url(./img/AUDI-E-TRON-GT-4.png);
+
+    .config2{
+    background: #c2e59c;
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
     background-attachment: fixed;
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 1fr 620px 100px;
+
+    .servicios{
+        list-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    .atencion-cliente{
+        border: solid;
+        display: block;
+        margin: auto;
+        grid-area: body;
+        width: 100vh;
+
+    }
+    .atencion{
+        text-align: center;
+        gap: 10px;
+        font-family: sans-serif;;
+        color: rgb(0, 0, 0);
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    
+    .atencion-1{
+        font-size: 20px;
+        padding-left: 30px;
+        margin-top: 50px;
+        font-family: sans-serif;;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+    
+    .atencion-2{
+        padding-left: 30px;
+        font-family: sans-serif;;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 20px;
+    }
 }
